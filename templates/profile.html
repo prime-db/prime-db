@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>PRiME Database</title>
+</head>
+<body>
+
+	{% for entry in belyi %}
+		The label is:
+		<br>
+		<p><a href="https://beta.lmfdb.org/Belyi/{{ entry[0] }}">{{entry[0]}}</a> (Click on the link to be redirected to LMFDB!)</p>
+    	<br>
+		The index is:
+		<p>\( {{entry[1]}} \)</p>
+    	<br>
+		The critical points are:
+		<p>\( {{entry[2]}} \)</p>
+    	<br>
+		The status is:
+		<p>{{entry[3]}}</p>
+    	<br>
+		The group name is:
+		<p>{{entry[4]}}</p>
+    	<br>
+	{% endfor %}
+</body>
+</html>
