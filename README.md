@@ -22,7 +22,7 @@ python -m venv env
 . env/bin/activate
 ```
 
- * Proceed to install dependencies.
+ * Proceed to install dependencies:
 
 ```{sh}
 pip install Flask gunicorn python-dotenv psycopg2-binary

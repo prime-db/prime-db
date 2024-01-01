@@ -7,8 +7,6 @@ import os
 load_dotenv()
 
 # Now you can use os.environ to access your variables
-db_username = os.environ['DB_USERNAME']
-db_password = os.environ['DB_PASSWORD']
 
 app = Flask(__name__)
 
