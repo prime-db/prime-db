@@ -28,4 +28,6 @@ python -m venv env
 pip install Flask gunicorn python-dotenv psycopg2-binary
 ```
 
-
+```
+gunicorn --bind 0.0.0.0:57 app:app
+```
