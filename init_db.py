@@ -32,7 +32,7 @@ try:
                                 group_name varchar(30)) '''
         cur.execute(create_script)
 
-        file = open('/home/tesfa/prime/belyi_data.json', "r")
+        file = open('/var/www/prime.tesfaasmara.com/prime-db/belyi_data.json', "r")
 
         file_str_form = file.read()
 

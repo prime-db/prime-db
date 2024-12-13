@@ -4,6 +4,14 @@
     <title>PRiME Database</title>
 </head>
 <body>
+    <h1>Filter by Degree</h1>
+    <form method="get" action="/">
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" value="{{ selected_degree }}">
+        <button type="submit">Filter</button>
+    </form>
+
+    <h2>Results</h2>
     <ul>
     {% for entry in belyi %}
         <li><a href="{{ entry[1] }}">{{ entry[0] }}</a></li>
